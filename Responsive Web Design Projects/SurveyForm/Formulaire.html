@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Formulaire</title>
+  <meta charset="utf-8">
+	<meta name="description" content="Formulaire HTML, CSS">
+	<meta name="keywords" content="Formulaire, html, css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>  
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Formulaire d'enquête</h1>
+      <p id="description" class="description">
+        Merci de prendre le temps de répondre à notre questionnaire
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nom</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Entrez vote nom"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Entrez votre Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optionnel)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+    <div class="form-group">
+        <p>
+          Quel langage êtes-vous en train d'apprendre?
+        </p>
+        <select id="dropdown" name="langage" class="form-control" required>
+          <option disabled selected value>Choisissez un langage</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="Javascript">Javascript</option>
+          <option value="PHP">PHP</option>
+        </select>
+      </div>  
+       
+      <div class="form-group">
+        <p>Comment avez-vous connu notre site?</p>
+        <label>
+          <input
+            name="user-how"
+            value="internet"
+            type="radio"
+            class="input-radio"
+            checked
+          />
+          Internet
+          </label>
+        <label>
+          <input
+            name="user-how"
+            value="bouche-a-oreille"
+            type="radio"
+            class="input-radio"
+          />
+          Bouche à oreille
+          </label>
+  
+        <label>
+            <input
+            name="user-how"
+            value="autre"
+            type="radio"
+            class="input-radio"
+          />
+          Autre
+      </label>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Que préférez-vous travailler? 
+          <span class="clue">(Cochez toutes les cases vous concernant)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="cours"
+            type="checkbox"
+            class="input-checkbox"
+          />Cours</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="exemple"
+            type="checkbox"
+            class="input-checkbox"
+          />Exemples</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="pratique"
+            type="checkbox"
+            class="input-checkbox"
+          />Pratique</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="tous"
+            type="checkbox"
+            class="input-checkbox"
+          />Tout ça</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="rien"
+            type="checkbox"
+            class="input-checkbox"
+          />Rien du tout!</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>Commentaires ou suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Entrez ici vos commentaires..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div> 
+
+</body>
+</html>

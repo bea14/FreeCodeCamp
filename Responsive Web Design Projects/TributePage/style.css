@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  #image {
+    diplay: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-caption {
+    font-size: 0.8em;
+    padding-top: 10px;
+    font-style: italic;
+  }
+  
+  #tribute-info {
+    background-color: #f5f5ef;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    max-width: 600px;
+  }
+  
+  ul {
+    text-align: justify;
+    margin-right: 20px;
+  }
+  
+  blockquote {
+    font-style: italic;
+    max-width: 550px;
+    quotes: "\201C" "\201E" "\2018 " "\201A";
+    text-align: justify;
+  }
+  
+  blockquote::before {
+    content: open-quote;
+    font-size: 2em;
+  }
+  
+  blockquote::after {
+    content: close-quote;
+    font-size: 2em;
+  }
+  
+  @media (max-width: 460px) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+  }

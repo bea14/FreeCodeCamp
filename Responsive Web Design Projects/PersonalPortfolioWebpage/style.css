@@ -1,0 +1,145 @@
+html {
+    box-sizing : border-box;
+    padding: 0;
+      margin: 0;
+    background-color: #f2f2f2;
+  }
+  
+  body >* {
+    font-size: 1.2em;
+      line-height: 1.5em;
+    
+  }
+  
+  #navbar {
+    display: flex; 
+    justify-content: center;
+    background-color: #cc3399;
+     position: fixed;
+    top: 0;
+  left: 0;
+    width: 100%;
+  }
+  
+  .nav-list {
+    display: flex;
+  }
+  
+  
+  #welcome-section {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  a, a:hover, a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  ul {
+    padding: 10px 10px;
+  }
+  
+  li {
+    padding: 0px 10px;
+    list-style: none;
+  }
+  
+  h1 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+  
+  main {
+    margin-top: 50vh;
+    width: 100%;
+  }
+  
+  .projects-section {
+    padding: 10px 2px;
+    background-color: #f0c1e1;
+    width: 100%
+  }
+  
+  .projects-section h2 {
+    max-width: 600px;
+    border-bottom: solid 1px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .projects-section-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 10px;
+    width: 100%;
+    /*margin: 0 auto;*/
+  }
+  
+  .projects-section-grid p {
+    padding: 2px 20px;
+    background-color: rgba(0,0,0,0.5);
+    width: 290px;
+    color: #fff;
+    margin-top: -10px;  
+    text-align: center;
+  }
+  
+  .projects-section-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btton {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 200px;
+    }
+  
+  a.button {
+   background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  
+  #contact {
+    text-align: center;
+  }
+  /*********************ECRANS**************/
+  @media all and (min-width: 900px) {
+      #navbar {
+          justify-content: flex-end;
+    }
+   main {
+    margin-top: 50vh;
+  } 
+  
+    .projects-section-grid {
+    grid-template-columns: 1fr 1fr;    
+    grid-column-gap: 30px;
+      justify-items: center;
+  }
+   
+  .projects-section-image {
+    height: 150px;
+  }
+   
+   a.button {
+   display: inline-block;
+   width: 200px;
+   height: 50px;
+   line-height: 50px;
+   vertical-align: middle;
+   text-align: center;
+  }
+    
+  }
+       
