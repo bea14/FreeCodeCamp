@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title> FreeCodeCamp: Javascript Calculator</title>
+<link rel="stylesheet" type="text/css" href="editor.css">
+<script src="https://kit.fontawesome.com/e3be2dc84a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+      <h1>
+        Javascript Calculator
+      </h1>
+  </header> 
+  
+  <div class="calculator">
+    <div class="calculator-display">
+    <input type="text" id="display" class="calculator-screen" value="" disabled />
+    </div>
+    <div class="calculator-keys">
+      
+      <button type="button" id="add" class="operator" value="+">+</button>
+      <button type="button" id="subtract" class="operator" value="-">-</button>
+      <button type="button" id="multiply" class="operator" value="*">&times;</button>
+      <button type="button" id="divide" class="operator" value="/">&divide;</button>
+      <button type="button" id="seven" value="7">7</button>
+      <button type="button" id="eight" value="8">8</button>
+      <button type="button" id="nine" value="9">9</button>
+      <button type="button" id="four" value="4">4</button>
+      <button type="button" id="five" value="5">5</button>
+      <button type="button" id="six" value="6">6 </button>
+      <button type="button" id="one" value="1">1</button>
+      <button type="button" id="two" value="2">2</button>
+      <button type="button" id="three" value="3">3</button>
+      <button type="button" id="zero" value="0">0</button>
+      <button type="button" id="decimal" class="decimal" value="." data-action="decimal">.</button>
+      <button type="button" id="clear" class="btn-clear" value="btn-clear" >C</button>
+      <button type="button" id="equals" class="equal-sign operator" value="=">=</button>
+   </div>
+  </div>
+  
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script src="calculator.js"></script>
+</html>
+
